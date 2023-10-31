@@ -1,0 +1,14 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "Hello Learning react",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Sahil",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.10.1"
+  }
+}
