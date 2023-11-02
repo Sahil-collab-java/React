@@ -4,6 +4,8 @@
   "description": "Hello Learning react",
 
   "scripts": {
+    "start":"parcel Hello.html",
+    "build":"parcel build Hello.html",
     "test": "jest"
   },
   "author": "Sahil",
