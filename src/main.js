@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Header from "./component/Header";
+import Body from "./component/Body";
 
 //const heading = React.createElement("h1", {id:"heading"}, "Hello From React !!!");
 
@@ -31,38 +33,45 @@ import ReactDOM from "react-dom/client";
 
 // )]
 
+// );
 
+// const Title = () =>(
+
+//         <h1>This is a Functional Component Title</h1>
 
 // );
 
-const Title = () =>(
+// const number = 1000;
 
-        <h1>This is a Functional Component Title</h1>
-  
-);
+// const reactElement= (
 
-const number = 1000;
+//     <h1>This is a React Element </h1>
 
-const reactElement= (
+// );
 
-    <h1>This is a React Element </h1>
+// const HeadingComponent = () =>(
+//     <div id="container">
+//         <Title/>
+//         {Title()}
+//         <Title></Title>
+//         {reactElement}
+//        <h2> {number}</h2>
+//         <h1>This is a Functional Component</h1>
+//     </div>
+// );
 
-);
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(<HeadingComponent/>);
 
-
-
-
-
-const HeadingComponent = () =>(
-    <div id="container">
-        <Title/>
-        {Title()}
-        <Title></Title>
-        {reactElement}
-       <h2> {number}</h2>
-        <h1>This is a Functional Component</h1>
+const Applayout = () => {
+  return (
+    <div className="app">
+      <Header />
+      <Body />
     </div>
-);
+  );
+};
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<HeadingComponent/>);
+root.render(<Applayout />);
